@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/pico.css">
+    <title>word unlocker</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>word unlocker</h1>
+      <form method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        {{ form.file }}
+        <input type="submit">
+    </main>
+  </body>
+</html>
