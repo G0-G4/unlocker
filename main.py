@@ -15,7 +15,7 @@ class Form(FlaskForm):
     file = FileField('file', validators=[DataRequired(), FileAllowed(['docx'])])
 
 @app.route('/', methods=['GET', 'POST'])
-def index():
+def index(): 
     form = Form()
     if form.validate_on_submit():
         filename = secure_filename(form.file.data.filename)
